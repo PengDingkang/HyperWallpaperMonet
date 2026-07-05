@@ -167,7 +167,7 @@ jobs:
             exit 0
           fi
           git -C "$temp_dir" commit -m "Update module metadata"
-          git -C "$temp_dir" -c http.extraheader="AUTHORIZATION: bearer $GH_TOKEN" push origin main
+          git -C "$temp_dir" push "https://x-access-token:${GH_TOKEN}@github.com/$XPOSED_REPOSITORY.git" main
       - name: Create and push tag
         if: ${{ inputs.publish_source_release }}
         run: |
