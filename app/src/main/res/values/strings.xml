@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HyperWallpaperMonet</string>
+    <string name="xposed_description">Restores HyperOS 3 SystemUI wallpaper Monet color refresh.</string>
+</resources>
